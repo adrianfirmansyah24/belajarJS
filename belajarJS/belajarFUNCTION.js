@@ -1,10 +1,6 @@
-function addName () {
-    return "adrian firmansyah"
-}
-console.log(addName());
-
-function nama(a,b) {
-    console.log(a,b)
+function addName() {
+    console.log('nama saya:', arguments[0])
+    console.log('umur saya:', arguments[1])
 }
 
-nama("adrian","ppp");
+addName('budi', 20)

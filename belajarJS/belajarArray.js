@@ -88,3 +88,10 @@ umur['dua belas'] = 12
 umur['tiga belas'] = 13
 umur['empat belas'] = 14
 console.log(umur)
+
+console.log(umur['dua belas']) 
+
+const angka = [21, 22, 23, 24, 25]
+console.log(angka)
+const newangka = angka
+console.log(newangka)

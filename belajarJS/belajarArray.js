@@ -82,16 +82,35 @@ console.log(buah)
 const nambahbuah2 = buah.unshift('kiwi')//menambah data di depan array
 console.log(buah)
  
-
+//membuat index array dengan kata kata
 const umur = []
 umur['dua belas'] = 12
 umur['tiga belas'] = 13
 umur['empat belas'] = 14
+
+//length pada array dengan index kata kata tidak berfungsi
 console.log(umur)
 
+//pemanggilan data pada array dengan index kata kata
 console.log(umur['dua belas']) 
 
 const angka = [21, 22, 23, 24, 25]
 console.log(angka)
-const newangka = angka
+
+//mengcopy array tanpa merubah array aslinya
+const newangka = [...angka]
+newangka[0] = 31
+
+//hasilnya
+console.log(angka)
 console.log(newangka)
+
+//array dapat terisi oleh macam macam tipe data
+const campuran = ['halo', 123, true, ['makan', 'besar'], undefined, {nama: 'budi', umur: 20}, [1, 2, 3]]
+console.log(campuran)
+
+//mengakses array dalam array
+console.log(campuran[6][1])
+console.log(campuran[3][0])
+console.log(campuran[5].umur)
+console.log(campuran[5].nama)
